@@ -15,6 +15,7 @@ Route::group([
     Route::post('/me', [AuthController::class, 'me'])->middleware('auth:api')->name('me');
 });
 
+
 // Rutas para ActivosController 
 Route::group([
     'middleware' => 'api',
